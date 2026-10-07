@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - PhotoVault</title>
+  <meta name="description" content="Terms of Service for PhotoVault Android application.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #090D16;
+      --bg-secondary: #0F172A;
+      --bg-card: rgba(30, 41, 59, 0.7);
+      --border-card: rgba(255, 255, 255, 0.08);
+      --accent-blue: #3B82F6;
+      --accent-purple: #8B5CF6;
+      --accent-cyan: #06B6D4;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-subtle: #64748B;
+      --gradient-accent: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #EC4899 100%);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+    header {
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(9, 13, 22, 0.85);
+      border-bottom: 1px solid var(--border-card);
+      z-index: 100;
+    }
+
+    .nav-wrapper { display: flex; justify-content: space-between; align-items: center; }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    .brand-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--gradient-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand-icon svg { width: 20px; height: 20px; fill: white; }
+
+    .nav-links { display: flex; align-items: center; gap: 20px; }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover { color: var(--text-main); }
+
+    .terms-wrapper { padding: 60px 0 80px; }
+
+    .terms-header {
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border-card);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 12px;
+      border-radius: 100px;
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      color: var(--accent-cyan);
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent-cyan); }
+
+    .terms-header h1 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .meta-info {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .terms-section { margin-bottom: 40px; }
+
+    .terms-section h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 16px;
+    }
+
+    .terms-section p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-size: 0.98rem;
+    }
+
+    .terms-section ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 16px;
+      padding-left: 4px;
+    }
+
+    .terms-section ul li {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      position: relative;
+      padding-left: 24px;
+    }
+
+    .terms-section ul li::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      color: var(--accent-cyan);
+      font-weight: bold;
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    .terms-section strong { color: var(--text-main); }
+
+    a { color: var(--accent-cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-card);
+      padding: 40px 0;
+      color: var(--text-subtle);
+      font-size: 0.85rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-1.96-2.36L6.5 17h11l-3.54-4.71z"/>
+          </svg>
+        </div>
+        PhotoVault
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html" style="color: var(--text-main); font-weight: 600;">Terms</a>
+        <a href="mailto:rohitkumar66909@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="terms-wrapper">
+    <div class="container">
+      
+      <div class="terms-header">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          User Agreement
+        </div>
+        <h1>Terms of Service for PhotoVault</h1>
+        <div class="meta-info">
+          <span><strong>Last Updated:</strong> October 7, 2026</span>
+          <span>•</span>
+          <span><strong>Application:</strong> PhotoVault (Android)</span>
+          <span>•</span>
+          <span><strong>Developer:</strong> Rohit Kumar</span>
+        </div>
+      </div>
+
+      <section class="terms-section">
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By downloading, installing, or using the PhotoVault application, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the application.
+        </p>
+      </section>
+
+      <section class="terms-section">
+        <h2>2. Description of Service</h2>
+        <p>
+          PhotoVault is a client-side personal media management utility for Android devices. The app enables users to organize local media files, preview content, and pool personal Google Drive storage accounts for media backup and synchronization without intermediary backend servers.
+        </p>
+      </section>
+
+      <section class="terms-section">
+        <h2>3. Third-Party Services & Google Drive</h2>
+        <p>
+          PhotoVault integrates directly with Google Drive APIs. Your use of Google Drive is governed by Google's Terms of Service and Privacy Policy. You are responsible for complying with Google's terms and managing your account storage quotas.
+        </p>
+      </section>
+
+      <section class="terms-section">
+        <h2>4. User Responsibilities</h2>
+        <ul>
+          <li>You retain full ownership and intellectual property rights to all media and content you store or sync using PhotoVault.</li>
+          <li>You are responsible for safeguarding your device, credentials, and Google account authentication.</li>
+          <li>You agree not to use the application for any unlawful purpose or in violation of applicable regulations.</li>
+        </ul>
+      </section>
+
+      <section class="terms-section">
+        <h2>5. Disclaimer of Warranties</h2>
+        <p>
+          PhotoVault is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, whether express or implied. While the application implements resilient multi-tier upload and recovery mechanisms, the developer does not warrant that the service will be uninterrupted, error-free, or that data loss will never occur due to hardware failures or third-party API changes.
+        </p>
+      </section>
+
+      <section class="terms-section">
+        <h2>6. Limitation of Liability</h2>
+        <p>
+          To the maximum extent permitted by applicable law, in no event shall the developer be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the application.
+        </p>
+      </section>
+
+      <section class="terms-section">
+        <h2>7. Contact</h2>
+        <p>
+          If you have questions regarding these Terms of Service, please contact Rohit Kumar at <a href="mailto:rohitkumar66909@gmail.com">rohitkumar66909@gmail.com</a>.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>&copy; 2026 PhotoVault. Developed by Rohit Kumar. All rights reserved.</div>
+      <div style="display: flex; gap: 20px;">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:rohitkumar66909@gmail.com">Support</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
